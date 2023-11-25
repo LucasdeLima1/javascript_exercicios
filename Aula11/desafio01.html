@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Nacionalidade</title>
+    <style>
+        input#pais {
+            background-color: rgba(255, 160, 122, 0.404);
+        }
+        div {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistemas de Nacionalidade</h1>
+    Qual o seu país de origem: <input type="text" name="pais" id="pais">
+        
+    <input type="button" value="Verificar" onclick="clicar()">
+    
+    <div id="res">
+        <p>Sua resposta é...</p>
+    </div>
+
+    <script>
+        function clicar() {
+            var p = window.document.querySelector('input#pais')
+            
+            var res = window.document.querySelector('div#res')
+
+            var p = String(p.value)
+
+            res.innerHTML = (`<p>Sua resposta foi, <strong>${p}</strong> então:</p>`)
+
+            if (p == 'Brasil') {
+                res.innerHTML += ("<p>Você é brasieliro!</p>")
+            } else {
+                res.innerHTML += ("<p>Você é gringo!</p>")
+            }
+        }
+    </script>
+</body>
+</html>
