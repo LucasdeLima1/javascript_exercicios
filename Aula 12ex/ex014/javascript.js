@@ -5,7 +5,7 @@ function carregar() {
     var hora = agora.getHours()
     msg.innerHTML = `Agora são ${hora} horas.`
 
-/* var hora = '12' */
+/* var hora = '12' */ 
 
 if (hora >= 0 && hora < 12) {
     /* Bom dia!*/
