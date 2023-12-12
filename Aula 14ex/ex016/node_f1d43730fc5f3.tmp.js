@@ -8,9 +8,9 @@
 
 var n1 = 1
 var n2 = 4
-var c = 1
-while (c < 4) {
-    console.log(`Passo ${c}`)
-    c = n1
-    c = n1 + 2
+var c = 0
+while (c < n2) {
+c = n1 
+c = n1 + 2
+console.log(`Passo ${c}`)
 } 
