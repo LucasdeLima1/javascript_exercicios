@@ -5,6 +5,7 @@ function contar() {
     let res = document.getElementById('res')
 
     if ( ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
+        res.innerHTML = 'Impossível conta!'
         window.alert('ERRO!')
     } else { 
         res.innerHTML = `Contando: `
@@ -13,9 +14,18 @@ function contar() {
         let f = Number(fim.value)
         let p = Number(passo.value)
 
-        for (let c = i; c <= f; c += p) {
-            res.innerHTML += `${c} `
+        if ( i < f ) {
+            // Contagem crescente
+            for (let c = i; c <= f; c += p) {
+                res.innerHTML += `${c} \u{1F449}`
+            }
+        } else {
+            // Contagem decrescente
+            
+
         }
+       
+        res.innerHTML += `\u{1F3C1}`
     }
 }
 
