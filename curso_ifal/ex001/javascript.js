@@ -1,4 +1,4 @@
-var n1 = Number(window.prompt('Digite um número...'))
+/* var n1 = Number(window.prompt('Digite um número...'))
 
 var n2 = Number(window.prompt('Digite outro número...'))
 
@@ -15,15 +15,15 @@ if (r < n3) {
     r = n3
 }
 
-window.alert(`O maior número é ${r}`)
+window.alert(`O maior número é ${r}`) */
 
-/*
+
 function calculo() {
-var res = window.document.getElementById('res')
 var v1 = window.document.getElementById('n1')
 var v2 = window.document.getElementById('n2')
 var v3 = window.document.getElementById('n3')
 var r = ''
+var res = window.document.getElementById('res')
 
 if (v1 < v2) {
     r = v2
@@ -35,6 +35,5 @@ if (r < v3) {
 }
 
 res.style.textAlign = 'center'
-res.innerHTML = `O maior número é o ${r}.`
+res.innerHTML = `O maior número é o ${r.value}.`
 }
-*/
