@@ -25,15 +25,23 @@ var v3 = window.document.getElementById('n3')
 var r = ''
 var res = window.document.getElementById('res')
 
-if (v1 < v2) {
-    r = v2
+if (v1.value.length == 0 || v2.value.length == 0 || v3.value.length == 0) {
+    window.alert('[ERRO] Impossivel calcuclar!')
 } else {
-    r = v1
+    let i = Number(v1.value)
+    let m = Number(v2.value)
+    let f = Number(v3.value)
+
+    if (i < m) {
+        r = m
+} else {
+        r = i
+        }
+if (r < f) {
+        r = f
+        }
 }
-if (r < v3) {
-    r = v3
 }
 
 res.style.textAlign = 'center'
-res.innerHTML = `O maior número é o ${r.value}.`
-}
+res.innerHTML = `O maior número é o ${r}. \u{1F44D}`
